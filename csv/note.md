@@ -5,41 +5,41 @@
 `is_readable()` 函数判断指定文件名是否可读. 
 指定的文件或目录存在并且可读,则返回 `TRUE`
 
-		<?php 
-		$file = 'jb51.net.php'; 
-		if (is_readable($file) == false) { 
-			die('文件不存在或者无法读取'); 
-		} else { 
-			echo '存在'; 
-		} 
-		?> 
+	<?php 
+	$file = 'jb51.net.php'; 
+	if (is_readable($file) == false) { 
+		die('文件不存在或者无法读取'); 
+	} else { 
+		echo '存在'; 
+	} 
+	?> 
 
 - 2.检查文件或目录是否存在 
 
 `file_exists ( string filename )`
 如果由 filename 指定的文件或目录存在则返回 TRUE,否则返回 FALSE. 
 
-		<?php 
-		$filename = 'jb51.net.php'; 
-		if (file_exists($filename)) { 
-			echo "The file $filename exists"; 
-		} else { 
-			echo "The file $filename does not exist"; 
-		} 
-		?> 
+	<?php 
+	$filename = 'jb51.net.php'; 
+	if (file_exists($filename)) { 
+		echo "The file $filename exists"; 
+	} else { 
+		echo "The file $filename does not exist"; 
+	} 
+	?> 
 
 - 2-1.目录是否存在 
 
 `is_dir`:目录是否存在
 
-		if(is_dir($dir))
-		{
-		    echo "当前目录下，目录".$dir."存在";
-		}
-		else
-		{
-		     echo "当前目录下，目录".$dir."不存在";
-		}
+	if(is_dir($dir))
+	{
+	    echo "当前目录下，目录".$dir."存在";
+	}
+	else
+	{
+	     echo "当前目录下，目录".$dir."不存在";
+	}
 
 
 - 3.判断给定文件名是否为一个正常的文件
@@ -47,14 +47,14 @@
 `is_file ( string filename)` 
 如果文件存在且为正常的文件则返回 TRUE.
 
-		<?php 
-		$file = 'jb51.net.php'; 
-		if (is_file($file) == false) { 
-			die('文件不存在或者无法读取'); 
-		} else { 
-			echo '存在'; 
-		} 
-		?> 
+	<?php 
+	$file = 'jb51.net.php'; 
+	if (is_file($file) == false) { 
+		die('文件不存在或者无法读取'); 
+	} else { 
+		echo '存在'; 
+	} 
+	?> 
 
 
 
